@@ -7,7 +7,9 @@ from config import VALID_TOKENS, OPENAI_MODEL
 app = Flask(__name__)
 CORS(app)
 
-client = OpenAI(api_key=os.environ.get('OPENAI_API_KEY'))
+client = OpenAI(
+       api_key=os.environ.get('OPENAI_API_KEY'),
+   )
 
 def call_openai(prompt, max_tokens=1500):
     response = client.chat.completions.create(
