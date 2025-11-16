@@ -1,0 +1,7 @@
+VALID_TOKENS = [
+    "MPF-POET-ACCESS-2024",
+    "MPF-PREMIUM-2024",
+    "MPF-CREATOR-2024"
+]
+
+OPENAI_MODEL = "gpt-4o-mini"
