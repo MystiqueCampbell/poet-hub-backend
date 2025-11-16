@@ -9,9 +9,7 @@ CORS(app)
 # Initialize OpenAI - simplified version
 from openai import OpenAI
 
-client = OpenAI(
-       api_key=os.environ.get('OPENAI_API_KEY'),
-   )
+client = OpenAI()
 
 def call_openai(prompt, max_tokens=1500):
     response = client.chat.completions.create(
